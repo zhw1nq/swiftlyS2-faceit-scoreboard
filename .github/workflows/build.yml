@@ -65,6 +65,16 @@ jobs:
           files: |
             swiftlyS2-faceit-scoreboard.zip
             workshop.zip
+          body: |
+            ## Installation
+            1. Extract `swiftlyS2-faceit-scoreboard.zip` to `addons/swiftlys2/plugins/`
+            2. Extract `workshop.zip` to `game/csgo_addons/` (not `content/csgo_addons/`)
+            3. Configure `config.jsonc` with your FaceIT API key
+            4. Restart server
+            
+            ## Requirements
+            - SwiftlyS2 v1.0.0+
+            - FaceIT API Key
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
