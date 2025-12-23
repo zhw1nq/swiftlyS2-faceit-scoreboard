@@ -1,65 +1,110 @@
-<div align="center">
-  <img src="https://pan.samyyc.dev/s/VYmMXE" width="100" />
-  <h1>SwiftlyS2 FaceIT Scoreboard</h1>
-  <p>Display FaceIT skill levels on the CS2 scoreboard</p>
-</div>
+# 🎯 FaceIT Scoreboard for SwiftlyS2
 
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"></a>
-  <a href="#"><img src="https://img.shields.io/badge/SwiftlyS2-1.0.0-0078D4?style=for-the-badge" alt="SwiftlyS2"></a>
-  <a href="#"><img src="https://img.shields.io/badge/CS2-Plugin-F7931A?style=for-the-badge&logo=steam&logoColor=white" alt="CS2"></a>
-</p>
+[![Source 2](https://img.shields.io/badge/Source%202-orange?style=for-the-badge&logo=valve&logoColor=white)](https://developer.valvesoftware.com/wiki/Source_2)
+[![SwiftlyS2](https://img.shields.io/badge/SwiftlyS2-1.0.0-blue?style=for-the-badge)](https://github.com/swiftly-solution/swiftlys2)
+[![.NET](https://img.shields.io/badge/.NET-10.0-purple?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![C#](https://img.shields.io/badge/C%23-12.0-green?style=for-the-badge&logo=csharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
-<p align="center">
-  <a href="https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/releases"><img src="https://img.shields.io/github/v/release/zhw1nq/swiftlyS2-faceit-scoreboard?style=flat-square" alt="Release"></a>
-  <a href="https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/blob/main/LICENSE"><img src="https://img.shields.io/github/license/zhw1nq/swiftlyS2-faceit-scoreboard?style=flat-square" alt="License"></a>
-  <a href="#"><img src="https://img.shields.io/badge/languages-30-success?style=flat-square" alt="Languages"></a>
-</p>
+[![Stars](https://img.shields.io/github/stars/zhw1nq/swiftlyS2-faceit-scoreboard?style=social)](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/stargazers)
+[![Forks](https://img.shields.io/github/forks/zhw1nq/swiftlyS2-faceit-scoreboard?style=social)](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/network/members)
+[![Watchers](https://img.shields.io/github/watchers/zhw1nq/swiftlyS2-faceit-scoreboard?style=social)](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/watchers)
 
----
+> **Display FaceIT levels on the scoreboard – know who's carrying at a glance.**
 
-## Features
+This SwiftlyS2 plugin enhances your CS2 server by displaying FaceIT skill levels directly on the scoreboard using custom coins/medals. Players can toggle FaceIT level display on/off and the plugin efficiently caches data to minimize API calls.
 
-- Auto-detect FaceIT levels on player connect
-- Display skill level as scoreboard medal
-- Toggle command for players (`/faceit`, `/fl`)
-- Persistent cache with configurable expiry
-- Multi-language support (30 languages)
-- Optimized with connection pooling & rate limiting
+## ✨ Features
 
-## Requirements
+- 🏆 **FaceIT Level Display**: Show FaceIT skill levels (1-10) as custom coins on the scoreboard
+- ⚡ **Real-time Updates**: Automatically fetch and update player FaceIT levels on connect
+- 🔄 **Player Control**: Toggle FaceIT level display on/off with simple commands
+- 💾 **Smart Caching**: Efficient caching system to reduce API calls and improve performance
+- 🎮 **Multi-game Support**: Supports both FaceIT CS2 and CSGO data fallback
+- 🌍 **Multi-language**: 30 languages supported
+- ⚙️ **Configurable**: Multiple configuration options for customization
+- 💿 **Persistent Data**: Player preferences saved across server restarts
+
+## 🖥️ Tested Platforms
+
+| Platform | Status    |
+| -------- | --------- |
+| Windows  | ✅ Tested  |
+| Linux    | ⏳ Pending |
+
+## 🎨 FaceIT Level Coins
+
+The plugin uses custom coin IDs to represent different FaceIT skill levels:
+
+| Level | Coin ID | Level | Coin ID |
+| ----- | ------- | ----- | ------- |
+| 1     | 1088    | 6     | 1074    |
+| 2     | 1087    | 7     | 1039    |
+| 3     | 1032    | 8     | 1067    |
+| 4     | 1055    | 9     | 1061    |
+| 5     | 1041    | 10    | 1017    |
+
+## 📋 Requirements
 
 - [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) v1.0.0+
+- CS2 Dedicated Server
 - [FaceIT API Key](https://developers.faceit.com/)
 
-## Installation
+## 🔧 Installation
 
-1. Download the [latest release](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/releases)
-2. Extract to `addons/swiftlys2/plugins/swiftlyS2-faceit-scoreboard/`
-3. Restart server
-4. Configure `config.jsonc` with your API key
+1. **Download** the [latest release](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/releases)
+2. **Extract** to `addons/swiftlys2/plugins/swiftlyS2-faceit-scoreboard/`
+3. **Restart** the server
+4. **Configure** the config file with your FaceIT API key
 
-## Configuration
+## ⚙️ Configuration
 
-| Option                    | Type   | Default | Description                             |
-| ------------------------- | ------ | ------- | --------------------------------------- |
-| `ApiKey`                  | string | `""`    | FaceIT Data API key (required)          |
-| `UseCSGO`                 | bool   | `false` | Fallback to CSGO stats if CS2 not found |
-| `DefaultStatus`           | bool   | `true`  | Show level by default for new players   |
-| `EnableToggleCommand`     | bool   | `true`  | Allow players to toggle display         |
-| `CacheExpiryHours`        | int    | `24`    | Hours before re-fetching level          |
-| `MaxConcurrentRequests`   | int    | `3`     | Maximum concurrent API requests         |
-| `RequestTimeoutSeconds`   | int    | `8`     | API request timeout                     |
-| `AutoSaveIntervalSeconds` | int    | `120`   | Cache auto-save interval                |
+The plugin creates a configuration file at:
+```
+addons/swiftlys2/configs/plugins/swiftlyS2-faceit-scoreboard/config.jsonc
+```
 
-## Commands
+### Configuration Options
 
-| Command   | Description                        |
-| --------- | ---------------------------------- |
-| `!faceit` | Toggle FaceIT level display on/off |
-| `!fl`     | Alias for `!faceit`                |
+| Option                    | Type   | Default | Description                                  |
+| ------------------------- | ------ | ------- | -------------------------------------------- |
+| `ApiKey`                  | string | `""`    | Your FaceIT API key (**Required**)           |
+| `UseCSGO`                 | bool   | `false` | Fallback to CSGO data if CS2 not found       |
+| `DefaultStatus`           | bool   | `true`  | Default FaceIT level display for new players |
+| `EnableToggleCommand`     | bool   | `true`  | Allow players to toggle display on/off       |
+| `CacheExpiryHours`        | int    | `24`    | Hours before reloading player data           |
+| `MaxConcurrentRequests`   | int    | `3`     | Maximum concurrent API requests              |
+| `RequestTimeoutSeconds`   | int    | `8`     | API request timeout                          |
+| `AutoSaveIntervalSeconds` | int    | `120`   | Auto-save cache interval                     |
 
-## Supported Languages
+### 🔑 Getting FaceIT API Key
+
+1. Visit [FaceIT Developer Portal](https://developers.faceit.com/)
+2. Log in with your FaceIT account
+3. Create a new application
+4. Copy the API key to your config file
+
+## 🎮 Commands
+
+| Command   | Alias | Description                        |
+| --------- | ----- | ---------------------------------- |
+| `!faceit` | `!fl` | Toggle FaceIT level display on/off |
+
+## 📁 File Structure
+
+```
+addons/swiftlys2/plugins/swiftlyS2-faceit-scoreboard/
+├── swiftlyS2-faceit-scoreboard.dll
+├── swiftlyS2-faceit-scoreboard.deps.json
+└── resources/
+    ├── templates/
+    │   └── config.template.jsonc
+    └── translations/
+        ├── en.jsonc
+        ├── vn.jsonc
+        └── ... (30 languages)
+```
+
+## 🌐 Supported Languages
 
 <p align="center">
   <img src="https://flagcdn.com/24x18/sa.png" alt="Arabic" title="Arabic">
@@ -94,20 +139,51 @@
   <img src="https://flagcdn.com/24x18/tw.png" alt="Chinese TW" title="Chinese TW">
 </p>
 
-## Building from Source
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **FaceIT levels not showing**
+   - Check if FaceIT API key is configured correctly
+   - Verify player has FaceIT account linked to Steam ID
+   - Check server console for API errors
+
+2. **Plugin not loading**
+   - Ensure SwiftlyS2 v1.0.0+ is installed
+   - Verify file permissions
+   - Check for conflicting plugins
+
+3. **Performance issues**
+   - Reduce `MaxConcurrentRequests` value
+   - Increase `CacheExpiryHours` to reduce API calls
+
+## 🔨 Building from Source
 
 ```bash
 git clone https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard.git
 cd swiftlyS2-faceit-scoreboard
 dotnet build
+dotnet publish -c Release
 ```
 
-## License
+## 🙏 Credits
+
+- **zhw1nq** - Author
+- **Original Idea**: Based on [Pisex's cs2-faceit-level](https://github.com/Pisex/cs2-faceit-level)
+- **Framework**: [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2)
+- **API**: [FaceIT Data API](https://developers.faceit.com/)
+
+## 💬 Support & Community
+
+- **Discord**: [@vhming_](https://discord.com/users/vhming_)
+- **SwiftlyS2 Community**: [Join Discord](https://discord.gg/swiftly)
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Credits
+---
 
-- **zhw1nq** - Author
-- [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) - Plugin framework
-- [FaceIT](https://developers.faceit.com/) - Data API
+<div align="center">
+<i>Made with ❤️ for the CS2 community</i>
+</div>
