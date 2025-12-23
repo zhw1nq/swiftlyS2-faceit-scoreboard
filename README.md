@@ -35,9 +35,10 @@
 ## Installation
 
 1. Download the [latest release](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/releases)
-2. Extract to `addons/swiftlys2/plugins/swiftlyS2-faceit-scoreboard/`
-3. Restart the server
-4. Configure `config.jsonc` with your FaceIT API key
+2. Extract plugin to `addons/swiftlys2/plugins/swiftlyS2-faceit-scoreboard/`
+3. Extract `workshop.zip` to `game/csgo_addons/` (not `content/csgo_addons/`)
+4. Restart the server
+5. Configure `config.jsonc` with your FaceIT API key
 
 ## Configuration
 

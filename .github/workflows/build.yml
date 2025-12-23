@@ -62,7 +62,9 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: swiftlyS2-faceit-scoreboard.zip
+          files: |
+            swiftlyS2-faceit-scoreboard.zip
+            workshop.zip
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
