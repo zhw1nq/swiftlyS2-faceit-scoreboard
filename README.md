@@ -15,7 +15,8 @@
 ## Showcase
 
 <div align="center">
-  <img src="Showcase.jpg" alt="Showcase" width="600"/>
+  <img src="Showcase.jpg" alt="Showcase"/>
+  <p><i>FaceIT icon displayed before the avatar. Other elements in the screenshot are unrelated to this plugin.</i></p>
 </div>
 
 ---
