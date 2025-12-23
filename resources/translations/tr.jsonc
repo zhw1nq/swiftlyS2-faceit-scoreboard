@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Seviye gösterimi [green]etkinleştirildi",
+    "level_disabled": "Seviye gösterimi [red]devre dışı bırakıldı",
+    "level_info": "FaceIT seviyen: [lime]{0}",
+    "command_disabled": "[red]Bu komut sunucu tarafından devre dışı bırakıldı",
+    "fetching": "[grey]FaceIT seviyen yükleniyor...",
+    "not_found": "[grey]FaceIT hesabı bulunamadı",
+    "error": "[red]FaceIT verileri yüklenirken hata oluştu"
+}

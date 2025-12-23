@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "等级显示[green]已启用",
+    "level_disabled": "等级显示[red]已禁用",
+    "level_info": "您的FaceIT等级: [lime]{0}",
+    "command_disabled": "[red]此命令已被服务器禁用",
+    "fetching": "[grey]正在获取您的FaceIT等级...",
+    "not_found": "[grey]未找到FaceIT账户",
+    "error": "[red]获取FaceIT数据时出错"
+}

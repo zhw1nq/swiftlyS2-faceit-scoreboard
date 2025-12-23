@@ -7,9 +7,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <AssemblyName>swiftlyS2_faceit_scoreboard</AssemblyName>
+    <AssemblyName>swiftlyS2-faceit-scoreboard</AssemblyName>
     <OutputPath>$(MSBuildThisFileDirectory)build/</OutputPath>
-    <PublishDir>$(OutputPath)publish/swiftlyS2_faceit_scoreboard</PublishDir>
+    <PublishDir>$(OutputPath)publish/swiftlyS2-faceit-scoreboard</PublishDir>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +29,8 @@
 
   <ItemGroup>
     <Compile Remove="examples\**\*.cs" />
+    <Compile Remove="faceit-scoreboard_cssharp-based\**\*.cs" />
+    <Compile Remove="docs-for-swiftlys2\**\*" />
   </ItemGroup>
 
   <Target Name="CreateZip" AfterTargets="Publish">

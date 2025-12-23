@@ -1,0 +1,25 @@
+{
+    // FaceIT Scoreboard Configuration
+    // https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard
+    "FaceIT": {
+        // Your FaceIT API key from https://developers.faceit.com/
+        // Required for the plugin to work
+        "ApiKey": "",
+        // Enable fallback to CSGO data if CS2 data not found
+        "UseCSGO": false,
+        // Show FaceIT level by default for new players
+        "DefaultStatus": true,
+        // Enable toggle command (if false, players cannot toggle their level display)
+        "EnableToggleCommand": true,
+        // Cache expiry time in hours
+        // Player levels are cached to reduce API calls
+        "CacheExpiryHours": 24,
+        // Maximum concurrent API requests
+        // Increase if you have many players connecting at once
+        "MaxConcurrentRequests": 3,
+        // API request timeout in seconds
+        "RequestTimeoutSeconds": 8,
+        // Auto save interval in seconds (0 to disable periodic save)
+        "AutoSaveIntervalSeconds": 120
+    }
+}

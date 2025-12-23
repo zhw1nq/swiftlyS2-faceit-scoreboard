@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "レベル表示[green]有効",
+    "level_disabled": "レベル表示[red]無効",
+    "level_info": "あなたのFaceITレベル: [lime]{0}",
+    "command_disabled": "[red]このコマンドはサーバーによって無効化されています",
+    "fetching": "[grey]FaceITレベルを取得中...",
+    "not_found": "[grey]FaceITアカウントが見つかりません",
+    "error": "[red]FaceITデータの取得エラー"
+}

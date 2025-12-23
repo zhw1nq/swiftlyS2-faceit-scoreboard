@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Affichage du niveau [green]activé",
+    "level_disabled": "Affichage du niveau [red]désactivé",
+    "level_info": "Votre niveau FaceIT: [lime]{0}",
+    "command_disabled": "[red]Cette commande est désactivée par le serveur",
+    "fetching": "[grey]Récupération de votre niveau FaceIT...",
+    "not_found": "[grey]Compte FaceIT non trouvé",
+    "error": "[red]Erreur lors de la récupération des données FaceIT"
+}

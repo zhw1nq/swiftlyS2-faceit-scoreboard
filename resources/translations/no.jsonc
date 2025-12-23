@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Nivåvisning [green]aktivert",
+    "level_disabled": "Nivåvisning [red]deaktivert",
+    "level_info": "Ditt FaceIT nivå: [lime]{0}",
+    "command_disabled": "[red]Denne kommandoen er deaktivert av serveren",
+    "fetching": "[grey]Henter FaceIT nivået ditt...",
+    "not_found": "[grey]FaceIT konto ikke funnet",
+    "error": "[red]Feil ved henting av FaceIT data"
+}

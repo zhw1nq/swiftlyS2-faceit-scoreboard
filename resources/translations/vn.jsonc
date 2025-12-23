@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Hiển thị level [green]đã bật",
+    "level_disabled": "Hiển thị level [red]đã tắt",
+    "level_info": "Level FaceIT của bạn: [lime]{0}",
+    "command_disabled": "[red]Lệnh này đã bị server tắt",
+    "fetching": "[grey]Đang tải level FaceIT của bạn...",
+    "not_found": "[grey]Không tìm thấy tài khoản FaceIT",
+    "error": "[red]Lỗi khi tải dữ liệu FaceIT"
+}

@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Zobrazení úrovně [green]zapnuto",
+    "level_disabled": "Zobrazení úrovně [red]vypnuto",
+    "level_info": "Vaše FaceIT úroveň: [lime]{0}",
+    "command_disabled": "[red]Tento příkaz byl serverem zakázán",
+    "fetching": "[grey]Načítání vaší FaceIT úrovně...",
+    "not_found": "[grey]FaceIT účet nenalezen",
+    "error": "[red]Chyba při načítání FaceIT dat"
+}

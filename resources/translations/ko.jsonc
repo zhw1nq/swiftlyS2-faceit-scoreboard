@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "레벨 표시 [green]활성화됨",
+    "level_disabled": "레벨 표시 [red]비활성화됨",
+    "level_info": "당신의 FaceIT 레벨: [lime]{0}",
+    "command_disabled": "[red]이 명령어는 서버에서 비활성화되었습니다",
+    "fetching": "[grey]FaceIT 레벨을 불러오는 중...",
+    "not_found": "[grey]FaceIT 계정을 찾을 수 없습니다",
+    "error": "[red]FaceIT 데이터 로딩 오류"
+}

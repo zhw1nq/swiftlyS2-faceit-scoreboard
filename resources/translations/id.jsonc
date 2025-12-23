@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Tampilan level [green]diaktifkan",
+    "level_disabled": "Tampilan level [red]dinonaktifkan",
+    "level_info": "Level FaceIT Anda: [lime]{0}",
+    "command_disabled": "[red]Perintah ini dinonaktifkan oleh server",
+    "fetching": "[grey]Mengambil level FaceIT Anda...",
+    "not_found": "[grey]Akun FaceIT tidak ditemukan",
+    "error": "[red]Error saat mengambil data FaceIT"
+}

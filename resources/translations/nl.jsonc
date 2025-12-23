@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Niveau weergave [green]ingeschakeld",
+    "level_disabled": "Niveau weergave [red]uitgeschakeld",
+    "level_info": "Jouw FaceIT niveau: [lime]{0}",
+    "command_disabled": "[red]Dit commando is uitgeschakeld door de server",
+    "fetching": "[grey]Je FaceIT niveau ophalen...",
+    "not_found": "[grey]FaceIT account niet gevonden",
+    "error": "[red]Fout bij ophalen FaceIT gegevens"
+}

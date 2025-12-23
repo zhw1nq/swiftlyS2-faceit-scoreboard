@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Szint megjelenítés [green]bekapcsolva",
+    "level_disabled": "Szint megjelenítés [red]kikapcsolva",
+    "level_info": "FaceIT szinted: [lime]{0}",
+    "command_disabled": "[red]Ez a parancs le van tiltva a szerver által",
+    "fetching": "[grey]FaceIT szinted betöltése...",
+    "not_found": "[grey]FaceIT fiók nem található",
+    "error": "[red]Hiba a FaceIT adatok betöltésekor"
+}

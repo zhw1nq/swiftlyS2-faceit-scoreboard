@@ -1,0 +1,10 @@
+{
+    "prefix": "[gold][FaceIT][default] ",
+    "level_enabled": "Η εμφάνιση επιπέδου [green]ενεργοποιήθηκε",
+    "level_disabled": "Η εμφάνιση επιπέδου [red]απενεργοποιήθηκε",
+    "level_info": "Το FaceIT επίπεδό σου: [lime]{0}",
+    "command_disabled": "[red]Αυτή η εντολή είναι απενεργοποιημένη από τον διακομιστή",
+    "fetching": "[grey]Φόρτωση του FaceIT επιπέδου σου...",
+    "not_found": "[grey]Δεν βρέθηκε λογαριασμός FaceIT",
+    "error": "[red]Σφάλμα κατά τη φόρτωση δεδομένων FaceIT"
+}

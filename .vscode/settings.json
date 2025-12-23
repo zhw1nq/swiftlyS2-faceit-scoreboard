@@ -1,0 +1,30 @@
+{
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/build": true,
+        "**/.git": true,
+        "**/.vs": true,
+        "**/*.user": true,
+        "**/faceit-scoreboard_cssharp-based": true,
+        "**/docs-for-swiftlys2": true
+    },
+    "search.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/build": true,
+        "**/faceit-scoreboard_cssharp-based": true,
+        "**/docs-for-swiftlys2": true
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}

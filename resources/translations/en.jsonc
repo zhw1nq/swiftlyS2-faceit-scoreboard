@@ -1,3 +1,10 @@
 {
-  "hello": "world"
+  "prefix": "[gold][FaceIT][default] ",
+  "level_enabled": "Level display [green]enabled",
+  "level_disabled": "Level display [red]disabled",
+  "level_info": "Your FaceIT level: [lime]{0}",
+  "command_disabled": "[red]This command is disabled by server",
+  "fetching": "[grey]Fetching your FaceIT level...",
+  "not_found": "[grey]FaceIT account not found",
+  "error": "[red]Error fetching FaceIT data"
 }
