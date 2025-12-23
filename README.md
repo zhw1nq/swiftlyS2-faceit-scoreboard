@@ -122,7 +122,7 @@ Output directory: `build/publish/swiftlyS2-faceit-scoreboard/`
 
 ## Credits
 
-- **zhw1nq** - Author
+- [zhw1nq](https://github.com/zhw1nq) - Author
 - [Pisex](https://github.com/Pisex/cs2-faceit-level) - Original idea
 - [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) - Framework
 - [FaceIT](https://developers.faceit.com/) - API
