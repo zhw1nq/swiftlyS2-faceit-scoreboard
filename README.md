@@ -108,5 +108,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Credits
 
+- **zhw1nq** - Author
 - [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) - Plugin framework
 - [FaceIT](https://developers.faceit.com/) - Data API
