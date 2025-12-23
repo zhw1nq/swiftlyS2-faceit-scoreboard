@@ -1,38 +1,54 @@
-# 🎯 FaceIT Scoreboard for SwiftlyS2
+<div align="center">
+  <img src="https://pan.samyyc.dev/s/VYmMXE"/>
+  <h1>SwiftlyS2 FaceIT Scoreboard</h1>
+  <p>Display FaceIT skill levels on the CS2 scoreboard</p>
+</div>
 
-[![Source 2](https://img.shields.io/badge/Source%202-orange?style=for-the-badge&logo=valve&logoColor=white)](https://developer.valvesoftware.com/wiki/Source_2)
-[![SwiftlyS2](https://img.shields.io/badge/SwiftlyS2-1.0.0-blue?style=for-the-badge)](https://github.com/swiftly-solution/swiftlys2)
-[![.NET](https://img.shields.io/badge/.NET-10.0-purple?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+<p align="center">
+  <a href="https://developer.valvesoftware.com/wiki/Source_2"><img src="https://img.shields.io/badge/Source%202-orange?style=for-the-badge&logo=valve&logoColor=white" alt="Source 2"></a>
+  <a href="https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/releases"><img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version"></a>
+  <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-10.0-purple?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"></a>
+</p>
 
-> **Display FaceIT levels on the scoreboard – know who's carrying at a glance.**
+---
 
-| Platform | Status    |
-| -------- | --------- |
-| Windows  | ✅ Tested  |
-| Linux    | ⏳ Pending |
+## Showcase
+
+<div align="center">
+  <img src="Showcase.jpg" alt="Showcase" width="600"/>
+</div>
+
+---
+
+| Platform | Status                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------- |
+| Windows  | ✅ Tested                                                                                       |
+| Linux    | ⏳ Need testers - [Open an issue](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/issues) |
 
 ## 📋 Requirements
 
 - [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) v1.0.0+
-- CS2 Dedicated Server
 - [FaceIT API Key](https://developers.faceit.com/)
 
-## 🔧 Installation
+## Installation
 
 1. Download the [latest release](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/releases)
 2. Extract to `addons/swiftlys2/plugins/swiftlyS2-faceit-scoreboard/`
 3. Restart the server
 4. Configure `config.jsonc` with your FaceIT API key
 
-## ⚙️ Configuration
+## Configuration
 
-| Option                | Type   | Default | Description                   |
-| --------------------- | ------ | ------- | ----------------------------- |
-| `ApiKey`              | string | `""`    | FaceIT API key (**Required**) |
-| `UseCSGO`             | bool   | `false` | Fallback to CSGO data         |
-| `DefaultStatus`       | bool   | `true`  | Show level by default         |
-| `EnableToggleCommand` | bool   | `true`  | Allow toggle command          |
-| `CacheExpiryHours`    | int    | `24`    | Cache duration                |
+| Option                    | Type   | Default | Description                            |
+| ------------------------- | ------ | ------- | -------------------------------------- |
+| `ApiKey`                  | string | `""`    | FaceIT API key (**Required**)          |
+| `UseCSGO`                 | bool   | `false` | Fallback to CSGO data if CS2 not found |
+| `DefaultStatus`           | bool   | `true`  | Show level by default for new players  |
+| `EnableToggleCommand`     | bool   | `true`  | Allow players to toggle display        |
+| `CacheExpiryHours`        | int    | `24`    | Hours before refreshing level          |
+| `MaxConcurrentRequests`   | int    | `3`     | Max concurrent API requests            |
+| `RequestTimeoutSeconds`   | int    | `8`     | API request timeout                    |
+| `AutoSaveIntervalSeconds` | int    | `120`   | Auto-save cache interval (0 = disable) |
 
 ## 🎮 Commands
 
@@ -75,6 +91,30 @@
   <img src="https://flagcdn.com/24x18/cn.png" title="Chinese CN">
   <img src="https://flagcdn.com/24x18/tw.png" title="Chinese TW">
 </p>
+
+## 🔨 Building & Development
+
+### Requirements
+
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+- [SwiftlyS2.CS2 NuGet Package](https://www.nuget.org/packages/SwiftlyS2.CS2)
+
+### Build
+
+```bash
+git clone https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard.git
+cd swiftlyS2-faceit-scoreboard
+dotnet restore
+dotnet build
+```
+
+### Publish
+
+```bash
+dotnet publish -c Release
+```
+
+Output: `build/publish/swiftlyS2-faceit-scoreboard/`
 
 ## 🙏 Credits
 
