@@ -20,12 +20,14 @@
 
 ---
 
-| Platform | Status                                                                                         |
-| -------- | ---------------------------------------------------------------------------------------------- |
-| Windows  | ✅ Tested                                                                                       |
-| Linux    | ⏳ Need testers - [Open an issue](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/issues) |
+## Platform Support
 
-## 📋 Requirements
+| Platform | Status                                                                                       |
+| -------- | -------------------------------------------------------------------------------------------- |
+| Windows  | Tested                                                                                       |
+| Linux    | Need testers - [Open an issue](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/issues) |
+
+## Requirements
 
 - [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) v1.0.0+
 - [FaceIT API Key](https://developers.faceit.com/)
@@ -41,7 +43,7 @@
 
 | Option                    | Type   | Default | Description                            |
 | ------------------------- | ------ | ------- | -------------------------------------- |
-| `ApiKey`                  | string | `""`    | FaceIT API key (**Required**)          |
+| `ApiKey`                  | string | `""`    | FaceIT API key (Required)              |
 | `UseCSGO`                 | bool   | `false` | Fallback to CSGO data if CS2 not found |
 | `DefaultStatus`           | bool   | `true`  | Show level by default for new players  |
 | `EnableToggleCommand`     | bool   | `true`  | Allow players to toggle display        |
@@ -50,14 +52,14 @@
 | `RequestTimeoutSeconds`   | int    | `8`     | API request timeout                    |
 | `AutoSaveIntervalSeconds` | int    | `120`   | Auto-save cache interval (0 = disable) |
 
-## 🎮 Commands
+## Commands
 
 | Command   | Description                 |
 | --------- | --------------------------- |
 | `!faceit` | Toggle FaceIT level display |
-| `!fl`     | Alias                       |
+| `!fl`     | Alias for `!faceit`         |
 
-## 🌐 Languages
+## Supported Languages
 
 <p align="center">
   <img src="https://flagcdn.com/24x18/sa.png" title="Arabic">
@@ -92,7 +94,7 @@
   <img src="https://flagcdn.com/24x18/tw.png" title="Chinese TW">
 </p>
 
-## 🔨 Building & Development
+## Building from Source
 
 ### Requirements
 
@@ -114,15 +116,15 @@ dotnet build
 dotnet publish -c Release
 ```
 
-Output: `build/publish/swiftlyS2-faceit-scoreboard/`
+Output directory: `build/publish/swiftlyS2-faceit-scoreboard/`
 
-## 🙏 Credits
+## Credits
 
 - **zhw1nq** - Author
 - [Pisex](https://github.com/Pisex/cs2-faceit-level) - Original idea
 - [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) - Framework
 - [FaceIT](https://developers.faceit.com/) - API
 
-## 📄 License
+## License
 
-MIT License
+This project is licensed under the MIT License.
