@@ -25,8 +25,8 @@
 
 | Platform | Status                                                                                       |
 | -------- | -------------------------------------------------------------------------------------------- |
-| Windows  | Tested                                                                                       |
-| Linux    | Need testers - [Open an issue](https://github.com/zhw1nq/swiftlyS2-faceit-scoreboard/issues) |
+| Windows  | Working                                                                                      |
+| Linux    | Working                                                                                      |
 
 ## Requirements
 
