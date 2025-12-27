@@ -25,8 +25,8 @@
 
 | Platform | Status                                                                                       |
 | -------- | -------------------------------------------------------------------------------------------- |
-| Windows  | Working                                                                                      |
-| Linux    | Working                                                                                      |
+| Windows  | Ready                                                                                        |
+| Linux    | Ready                                                                                        |
 
 ## Requirements
 
